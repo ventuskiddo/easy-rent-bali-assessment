@@ -1,0 +1,281 @@
+{
+  "run_id": "triage_e8dbedd204305421",
+  "started_at": "2026-11-05T20:03:40.096+08:00",
+  "finished_at": "2026-11-05T20:03:40.373+08:00",
+  "source_file": "data/outage_telemetry.json",
+  "records_processed": 8,
+  "records_invalid": 0,
+  "summary": {
+    "incidents_by_type": {
+      "CRITICAL_SECURITY_ALERT": 2,
+      "OFFLINE_TELEMETRY_DROP": 1,
+      "MAINTENANCE_REQUIRED": 3
+    },
+    "deliveries_by_status": {
+      "delivered": 6,
+      "failed_after_retries": 0
+    }
+  },
+  "alerts": [
+    {
+      "payload": {
+        "alert_id": "alert_344a2df4c77a3b674ebdb8c8",
+        "incident_type": "CRITICAL_SECURITY_ALERT",
+        "severity": "CRITICAL",
+        "device_id": "iot_car_02",
+        "plate": "DK 5678 CD",
+        "model": "Mitsubishi Xpander",
+        "gateway_id": "gw_kuta_01",
+        "reasons": [
+          "Vehicle is marked available while moving at 52 km/h."
+        ],
+        "telemetry": {
+          "device_id": "iot_car_02",
+          "plate": "DK 5678 CD",
+          "model": "Mitsubishi Xpander",
+          "status": "available",
+          "current_speed_kmh": 52,
+          "current_location": {
+            "zone": "KUTA_HUB"
+          },
+          "battery_voltage": 12.8,
+          "fuel_percent": 82,
+          "last_ping_seconds_ago": 20,
+          "gateway_id": "gw_kuta_01"
+        },
+        "detected_at": "2026-11-05T20:03:40.099+08:00",
+        "recommended_action": "Contact the customer and fleet operations immediately; verify vehicle status and location."
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "delay_ms": 0,
+          "outcome": "retryable_error",
+          "error": "Webhook accepted alert but ACK was lost"
+        },
+        {
+          "attempt": 2,
+          "delay_ms": 120,
+          "outcome": "delivered"
+        }
+      ],
+      "final_status": "delivered"
+    },
+    {
+      "payload": {
+        "alert_id": "alert_58a35e3ee5da48ce8bc291b3",
+        "incident_type": "CRITICAL_SECURITY_ALERT",
+        "severity": "CRITICAL",
+        "device_id": "iot_car_05",
+        "plate": "DK 7890 IJ",
+        "model": "Toyota Fortuner",
+        "gateway_id": "gw_kuta_01",
+        "reasons": [
+          "Vehicle is in restricted zone RESTRICTED_OFFROAD_BATUKARU."
+        ],
+        "telemetry": {
+          "device_id": "iot_car_05",
+          "plate": "DK 7890 IJ",
+          "model": "Toyota Fortuner",
+          "status": "rented",
+          "current_speed_kmh": 60,
+          "current_location": {
+            "zone": "RESTRICTED_OFFROAD_BATUKARU"
+          },
+          "battery_voltage": 12.9,
+          "fuel_percent": 54,
+          "last_ping_seconds_ago": 80,
+          "gateway_id": "gw_kuta_01"
+        },
+        "detected_at": "2026-11-05T20:03:40.234+08:00",
+        "recommended_action": "Contact the customer and fleet operations immediately; verify vehicle status and location."
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "delay_ms": 0,
+          "outcome": "delivered"
+        }
+      ],
+      "final_status": "delivered"
+    },
+    {
+      "payload": {
+        "alert_id": "alert_d79fea0937151341876d0768",
+        "incident_type": "OFFLINE_TELEMETRY_DROP",
+        "severity": "OFFLINE",
+        "device_id": "iot_car_06",
+        "plate": "DK 2345 KL",
+        "model": "Toyota Raize",
+        "gateway_id": "gw_kuta_01",
+        "reasons": [
+          "Rented vehicle has been silent for 1320 seconds (threshold: >900 seconds)."
+        ],
+        "telemetry": {
+          "device_id": "iot_car_06",
+          "plate": "DK 2345 KL",
+          "model": "Toyota Raize",
+          "status": "rented",
+          "current_speed_kmh": 0,
+          "current_location": {
+            "zone": "KUTA_HUB"
+          },
+          "battery_voltage": 12.5,
+          "fuel_percent": 88,
+          "last_ping_seconds_ago": 1320,
+          "gateway_id": "gw_kuta_01"
+        },
+        "detected_at": "2026-11-05T20:03:40.235+08:00",
+        "recommended_action": "Check gateway connectivity and request a location update from the customer or branch team."
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "delay_ms": 0,
+          "outcome": "delivered"
+        }
+      ],
+      "final_status": "delivered"
+    },
+    {
+      "payload": {
+        "alert_id": "alert_0d013f578c318a5a42eb4853",
+        "incident_type": "MAINTENANCE_REQUIRED",
+        "severity": "MAINTENANCE",
+        "device_id": "iot_car_03",
+        "plate": "DK 9012 EF",
+        "model": "Toyota Innova Zenix",
+        "gateway_id": "gw_kuta_01",
+        "reasons": [
+          "Battery voltage is low: 11.2 V (threshold: <11.5 V)."
+        ],
+        "telemetry": {
+          "device_id": "iot_car_03",
+          "plate": "DK 9012 EF",
+          "model": "Toyota Innova Zenix",
+          "status": "rented",
+          "current_speed_kmh": 0,
+          "current_location": {
+            "zone": "ULUWATU"
+          },
+          "battery_voltage": 11.2,
+          "fuel_percent": 45,
+          "last_ping_seconds_ago": 55,
+          "gateway_id": "gw_kuta_01"
+        },
+        "detected_at": "2026-11-05T20:03:40.235+08:00",
+        "recommended_action": "Arrange vehicle inspection and service before the next rental."
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "delay_ms": 0,
+          "outcome": "retryable_error",
+          "error": "Mock webhook returned HTTP 503"
+        },
+        {
+          "attempt": 2,
+          "delay_ms": 79,
+          "outcome": "retryable_error",
+          "error": "Mock webhook returned HTTP 503"
+        },
+        {
+          "attempt": 3,
+          "delay_ms": 35,
+          "outcome": "delivered"
+        }
+      ],
+      "final_status": "delivered"
+    },
+    {
+      "payload": {
+        "alert_id": "alert_432867e3ee37b4eab1e4aaaa",
+        "incident_type": "MAINTENANCE_REQUIRED",
+        "severity": "MAINTENANCE",
+        "device_id": "iot_car_04",
+        "plate": "DK 3456 GH",
+        "model": "Suzuki Ertiga",
+        "gateway_id": "gw_kuta_01",
+        "reasons": [
+          "Fuel is low: 9% (threshold: <15%)."
+        ],
+        "telemetry": {
+          "device_id": "iot_car_04",
+          "plate": "DK 3456 GH",
+          "model": "Suzuki Ertiga",
+          "status": "rented",
+          "current_speed_kmh": 0,
+          "current_location": {
+            "zone": "SANUR"
+          },
+          "battery_voltage": 12.4,
+          "fuel_percent": 9,
+          "last_ping_seconds_ago": 110,
+          "gateway_id": "gw_kuta_01"
+        },
+        "detected_at": "2026-11-05T20:03:40.373+08:00",
+        "recommended_action": "Arrange vehicle inspection and service before the next rental."
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "delay_ms": 0,
+          "outcome": "delivered"
+        }
+      ],
+      "final_status": "delivered"
+    },
+    {
+      "payload": {
+        "alert_id": "alert_ac8eee72b27b4e776b245723",
+        "incident_type": "MAINTENANCE_REQUIRED",
+        "severity": "MAINTENANCE",
+        "device_id": "iot_car_08",
+        "plate": "DK 4567 OP",
+        "model": "Honda Brio",
+        "gateway_id": "gw_kuta_01",
+        "reasons": [
+          "Battery voltage is low: 11.3 V (threshold: <11.5 V).",
+          "Fuel is low: 11% (threshold: <15%)."
+        ],
+        "telemetry": {
+          "device_id": "iot_car_08",
+          "plate": "DK 4567 OP",
+          "model": "Honda Brio",
+          "status": "available",
+          "current_speed_kmh": 0,
+          "current_location": {
+            "zone": "KUTA_HUB"
+          },
+          "battery_voltage": 11.3,
+          "fuel_percent": 11,
+          "last_ping_seconds_ago": 15,
+          "gateway_id": "gw_kuta_01"
+        },
+        "detected_at": "2026-11-05T20:03:40.373+08:00",
+        "recommended_action": "Arrange vehicle inspection and service before the next rental."
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "delay_ms": 0,
+          "outcome": "delivered"
+        }
+      ],
+      "final_status": "delivered"
+    }
+  ],
+  "devices_without_incidents": [
+    {
+      "device_id": "iot_car_01",
+      "plate": "DK 1234 AB",
+      "model": "Toyota Avanza"
+    },
+    {
+      "device_id": "iot_car_07",
+      "plate": "DK 6789 MN",
+      "model": "Daihatsu Xenia"
+    }
+  ],
+  "invalid_records": []
+}

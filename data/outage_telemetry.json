@@ -1,0 +1,10 @@
+[
+ {"device_id":"iot_car_01","plate":"DK 1234 AB","model":"Toyota Avanza","status":"rented","current_speed_kmh":45,"current_location":{"zone":"CANGGU"},"battery_voltage":12.6,"fuel_percent":68,"last_ping_seconds_ago":35,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_02","plate":"DK 5678 CD","model":"Mitsubishi Xpander","status":"available","current_speed_kmh":52,"current_location":{"zone":"KUTA_HUB"},"battery_voltage":12.8,"fuel_percent":82,"last_ping_seconds_ago":20,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_03","plate":"DK 9012 EF","model":"Toyota Innova Zenix","status":"rented","current_speed_kmh":0,"current_location":{"zone":"ULUWATU"},"battery_voltage":11.2,"fuel_percent":45,"last_ping_seconds_ago":55,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_04","plate":"DK 3456 GH","model":"Suzuki Ertiga","status":"rented","current_speed_kmh":0,"current_location":{"zone":"SANUR"},"battery_voltage":12.4,"fuel_percent":9,"last_ping_seconds_ago":110,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_05","plate":"DK 7890 IJ","model":"Toyota Fortuner","status":"rented","current_speed_kmh":60,"current_location":{"zone":"RESTRICTED_OFFROAD_BATUKARU"},"battery_voltage":12.9,"fuel_percent":54,"last_ping_seconds_ago":80,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_06","plate":"DK 2345 KL","model":"Toyota Raize","status":"rented","current_speed_kmh":0,"current_location":{"zone":"KUTA_HUB"},"battery_voltage":12.5,"fuel_percent":88,"last_ping_seconds_ago":1320,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_07","plate":"DK 6789 MN","model":"Daihatsu Xenia","status":"available","current_speed_kmh":0,"current_location":{"zone":"KUTA_HUB"},"battery_voltage":12.6,"fuel_percent":75,"last_ping_seconds_ago":25,"gateway_id":"gw_kuta_01"},
+ {"device_id":"iot_car_08","plate":"DK 4567 OP","model":"Honda Brio","status":"available","current_speed_kmh":0,"current_location":{"zone":"KUTA_HUB"},"battery_voltage":11.3,"fuel_percent":11,"last_ping_seconds_ago":15,"gateway_id":"gw_kuta_01"}
+]
